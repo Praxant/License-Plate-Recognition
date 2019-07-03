@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataFill">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+
+      android:layout_marginLeft="26dp"
+      android:layout_marginRight="26dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginBottom="20dp"
+      android:background="@drawable/datafil">
+
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:id="@+id/datafillblankimage"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            tools:layout_editor_absoluteX="143dp"
+            tools:layout_editor_absoluteY="40dp">
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/labelvehid"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Vehicle Number"
+          android:fontFamily="@font/nexa_b"
+          android:textColor="#000"
+          android:textSize="30dp"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="120dp"
+            />
+
+      <EditText
+
+          android:id="@+id/labelvehidedittext"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@+id/labelvehid"
+
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:inputType="textPersonName"
+          />
+
+
+
+
+      <TextView
+          android:id="@+id/labelnameid"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Name"
+          android:fontFamily="@font/nexa_b"
+          android:textColor="#000"
+          android:textSize="30dp"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@id/labelvehidedittext"
+          android:layout_marginTop="20dp"
+
+          />
+
+      <EditText
+          android:id="@+id/labelnameidedittext"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@id/labelnameid"
+
+           />
+
+
+
+
+
+      <TextView
+          android:id="@+id/labelcontactid"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Contact"
+          android:fontFamily="@font/nexa_b"
+          android:textColor="#000"
+          android:textSize="30dp"
+          android:layout_below="@+id/labelnameidedittext"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="20dp"
+
+          />
+
+      <EditText
+          android:id="@+id/labelcontactidedittext"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_below="@+id/labelcontactid"
+          android:layout_centerHorizontal="true"
+
+           />
+
+
+
+
+      <TextView
+          android:id="@+id/labeladdressid"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/nexa_b"
+          android:text="Address"
+          android:textColor="#000"
+          android:textSize="30dp"
+          android:layout_below="@+id/labelcontactidedittext"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="20dp"
+
+
+
+
+          />
+
+      <EditText
+          android:id="@+id/labeladdressidedittext"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@+id/labeladdressid"
+           />
+
+      <Button
+          android:id="@+id/savebutton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:text="Save"
+          android:layout_marginBottom="5dp"
+          android:layout_alignParentBottom="true"
+          android:fontFamily="@font/nexa_l"
+          android:textSize="20dp"
+          android:background="@drawable/savebuttonlay"
+          />
+
+  </RelativeLayout>
+
+</RelativeLayout>

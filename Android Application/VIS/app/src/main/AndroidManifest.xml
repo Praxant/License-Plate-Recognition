@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prax.vis">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/newlogo"
+        android:label="VISION"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ImageCapture"
+            android:noHistory="true" />
+        <activity
+            android:name=".ImageCaptureGal"
+            android:noHistory="true" />
+        <activity android:name=".DataFill" />
+        <activity android:name=".HistoryActivity"></activity>
+    </application>
+
+</manifest>

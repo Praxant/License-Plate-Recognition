@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mybg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView.Large"
+        android:visibility="invisible"
+        app:indicatorName="BallClipRotateMultipleIndicator"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="573dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/img_cap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/popup"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingLeft="30dp"-->
+        <!--android:paddingRight="30dp"-->
+        <!--android:layout_below="@+id/frameLayout"/>-->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="6dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shutter_circ"
+        android:layout_below="@+id/popup">
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/send" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

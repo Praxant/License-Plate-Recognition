@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp">
+
+        <RelativeLayout
+            android:layout_width="318dp"
+            android:layout_height="181dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/lastscannedrectangle">
+
+            <ImageView
+                android:id="@+id/nitlogo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/nitkkrlogo"
+                android:layout_centerInParent="true"/>
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="35dp"-->
+                <!--android:text="Last scanned"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="37dp"-->
+                <!--app:fontFamily="@font/nexa_l" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/lastscanned"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginBottom="41dp"-->
+                <!--android:fontFamily="@font/nexa_b"-->
+                <!--android:text="IN 547D"-->
+                <!--android:textColor="#FFFF"-->
+                <!--android:textSize="45sp" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/add_circ">
+
+            <Button
+                android:id="@+id/addmore"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/add" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="265dp"
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangle3"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/supervisor">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Supervisor:\nMantosh Bishwash"
+                android:textSize="25dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nexa_l"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/mantoshsir"
+                    app:civ_border_width="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    app:civ_border_color="#FF000000"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/supervisor"
+            android:layout_marginLeft="20dp"
+           >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/suresh"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="#FF000000"
+                    android:id="@+id/sureshdata"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="21dp"
+                    android:text="   Suresh \n 11530015"
+                    android:fontFamily="@font/nexa_l"
+                    android:layout_below="@id/sureshdata"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/sandeep"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="#FF000000"
+                    android:id="@+id/sandeepdata"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="7dp"
+                    android:textSize="21dp"
+                    android:text="   Sandeep \n   11530016"
+                    android:fontFamily="@font/nexa_l"
+                    android:layout_below="@id/sandeepdata"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/prashant"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="#FF000000"
+                    android:id="@+id/prashantdata"/>
+                <!--<ImageView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="65dp"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:background="@drawable/blankprofile"-->
+                    <!--android:id="@+id/prashantdata"-->
+                    <!--/>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="21dp"
+                    android:text="   Prashant \n   11530017"
+                    android:fontFamily="@font/nexa_l"
+                    android:layout_below="@id/prashantdata"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/pr_rect">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shutter_circ">
+
+            <Button
+                android:id="@+id/btncam"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bluecam" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/shutter_circ">
+
+            <Button
+                android:id="@+id/btngallery"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/newgalleryicon" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
